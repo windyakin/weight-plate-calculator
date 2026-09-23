@@ -91,9 +91,19 @@ const addPlate = () => {
 }
 .add-row {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   gap: 8px;
   padding: 8px 16px 16px;
+}
+.add-row ion-input {
+  flex: 1;
+  min-width: 0;
+}
+/* 入力欄に押されて「追加」が折り返さないようにし、高さも入力欄に揃える */
+.add-row ion-button {
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin: 0;
 }
 ion-segment {
   margin: 8px 16px;
