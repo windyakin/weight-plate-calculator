@@ -1,0 +1,42 @@
+:root {
+  --plate-red: #d62b2b;
+  --plate-blue: #1f5fbf;
+  --plate-yellow: #e8b923;
+  --plate-green: #2e9a4b;
+  --plate-white: #f2f2f2;
+  --plate-silver: #9aa3ad;
+  --plate-black: #2b2b2b;
+  --bar-color: #b8bec6;
+
+  /* セッション中に誰の番かを見分けるためのメンバーの色 */
+  --member-color-0: #f76707;
+  --member-color-1: #1c7ed6;
+  --member-color-2: #37b24d;
+  --member-color-3: #ae3ec9;
+  --member-color-4: #f03e3e;
+  --member-color-5: #0ca678;
+  --member-color-6: #f59f00;
+  --member-color-7: #d6336c;
+}
+
+.unit {
+  font-size: 0.5em;
+  font-weight: 500;
+  margin-left: 0.2em;
+  color: var(--ion-color-medium);
+}
+
+ion-button,
+ion-segment-button {
+  text-transform: none;
+}
+
+/* 数値入力のスピンボタンは ± ボタンと重複するので隠す */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
